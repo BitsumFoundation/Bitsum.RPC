@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bitsum.RPC", "Bitsum.RPC\Bitsum.RPC.csproj", "{109089A8-981D-4440-9BFA-4401421BF045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitsum.RPC.Tests", "Bitsum.RPC.Tests\Bitsum.RPC.Tests.csproj", "{27F1C007-F7DF-4C17-A345-1FE8314B30FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{109089A8-981D-4440-9BFA-4401421BF045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109089A8-981D-4440-9BFA-4401421BF045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109089A8-981D-4440-9BFA-4401421BF045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109089A8-981D-4440-9BFA-4401421BF045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F1C007-F7DF-4C17-A345-1FE8314B30FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F1C007-F7DF-4C17-A345-1FE8314B30FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F1C007-F7DF-4C17-A345-1FE8314B30FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F1C007-F7DF-4C17-A345-1FE8314B30FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE670CA1-7D55-40F0-AD43-AFEDEEA27B87}
+	EndGlobalSection
+EndGlobal
