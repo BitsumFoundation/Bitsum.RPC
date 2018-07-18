@@ -30,8 +30,8 @@ namespace Bitsum.RPC
 
             Status res = new Status()
             {
-                LocalHeight = response.Result.top_block_height,
-                GlobalHeight = response.Result.top_known_block_height,
+                TopBlockHeight = response.Result.top_block_height,
+                NetworkHeight = response.Result.top_known_block_height,
             };
 
             return res;

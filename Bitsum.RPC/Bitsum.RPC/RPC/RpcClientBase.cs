@@ -22,7 +22,7 @@ namespace Bitsum.RPC
         protected async Task<T> GetAsync<T>(string uri)
         {
             string response;
-            using (HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Post, uri))
+            using (HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Get, uri))
             {
                 //string command = string.Format("token={0}&username={1}&password={2}", _token, _email, _password);
                 //req.Content = new StringContent(requestCmd, Encoding.UTF8, "application/json");

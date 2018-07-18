@@ -9,13 +9,14 @@ namespace Bitsum.RPC.Tests
     {
         private readonly string testAddress = "Sm4CM39p2N6AYTHaGK9JzWDMZWUZ67P7tHK3u6pDHhwHZoJFSSk2FR5VLwERGf7JFDQBt9eFp4YTfMyLUPnLJc6g2PhR7dd8A";
 
-        private readonly WalletClient client = new WalletClient("http://127.0.0.1:28082");
+        //private readonly WalletClient client = new WalletClient("http://127.0.0.1:28082");
+        private readonly WalletClient client = new WalletClient("http://127.0.0.1:20001");
 
         [TestMethod]
         public void GetStatusTest()
         {
             Status result = client.GetStatus().Result;
-            Debug.WriteLine($"{result.LocalHeight}/{result.GlobalHeight}");
+            Debug.WriteLine($"{result.TopBlockHeight}/{result.NetworkHeight}");
         }
 
         [TestMethod]
