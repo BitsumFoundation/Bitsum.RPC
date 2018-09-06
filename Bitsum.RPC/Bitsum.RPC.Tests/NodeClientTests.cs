@@ -36,7 +36,7 @@ namespace Bitsum.RPC.Tests
         [TestMethod]
         public void GetTransactionTest()
         {
-            var result = client.GetTransaction("e109bc85e7c76ed01d315cc8aec1ff05bd801ff7a9b7003d8d11bfd2be2a8565").Result;
+            var result = client.GetTransaction("6f47c4e258cdbc900580a83b45c6b0bdc98eaef8e86395ff990f522048c7d9c1").Result;
             Debug.WriteLine($"{JsonConvert.SerializeObject(result, Formatting.Indented)}");
         }
 
