@@ -93,6 +93,7 @@ namespace Bitsum.RPC.Node
                 FromBlock = response.Result.Block,
                 AmountIn = response.Result.TransactionDetails.AmountIn,
                 AmountOut = response.Result.TransactionDetails.AmountOut,
+                Fee = response.Result.TransactionDetails.Fee,
                 Extra = response.Result.Transaction.Extra,
                 Hash = response.Result.TransactionDetails.Hash,
                 Mixin = response.Result.TransactionDetails.Mixin,

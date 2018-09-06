@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <AssemblyVersion>0.18.7.18</AssemblyVersion>
-    <FileVersion>0.18.7.18</FileVersion>
+    <AssemblyVersion>0.18.9.6</AssemblyVersion>
+    <FileVersion>0.18.9.6</FileVersion>
     <PackageTags>bitsum</PackageTags>
-    <Version>0.18.7.18</Version>
+    <Version>0.18.9.6</Version>
     <Company>Bitsum Foundation</Company>
     <Authors>Dmitry Tarasov</Authors>
     <RepositoryUrl>https://github.com/BitsumFoundation/Bitsum.RPC.git</RepositoryUrl>
@@ -27,6 +27,6 @@
   </ItemGroup>
   
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy $(TargetDir)..\*.nupkg d:\nuget\ /y" />
+    <!--<Exec Command="copy $(TargetDir)..\*.nupkg d:\nuget\ /y" />-->
   </Target>
 </Project>

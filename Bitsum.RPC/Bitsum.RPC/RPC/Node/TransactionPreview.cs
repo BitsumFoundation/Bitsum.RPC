@@ -14,6 +14,9 @@ namespace Bitsum.RPC.Node
         [JsonProperty("amount_out")]
         public ulong AmountOut { get; set; }
 
+        [JsonProperty("fee")]
+        public ulong Fee { get; set; }
+
         [JsonProperty("size")]
         public ulong Size { get; set; }
 
