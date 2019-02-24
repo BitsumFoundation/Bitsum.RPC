@@ -251,5 +251,36 @@ namespace Bitsum.RPC.Wallet
 
             return new List<Transaction>();
         }
+
+        public async Task<List<Transaction>> GetTransfersFromPool()
+        {
+            var status = await GetStatus();
+
+            GetTransfersData.Request arg = new GetTransfersData.Request()
+            {
+                from_height = status.NetworkHeight - 1,
+                to_height = uint.MaxValue
+            };
+
+            RpcRequest<GetTransfersData.Request> request = new RpcRequest<GetTransfersData.Request>()
+            {
+                Method = "get_transfers",
+                Arguments = arg
+            };
+
+            RpcResponse<GetTransfersData.Response> response = await PostAsync<RpcResponse<GetTransfersData.Response>>(request, Uri);
+
+            if (response.Error != null)
+            {
+                throw new RpcException(response.Error.Message);
+            }
+
+            if (response.Result.blocks != null && response.Result.blocks.Count > 0)
+            {
+                return response.Result.blocks[0].transactions;
+            }
+
+            return new List<Transaction>();
+        }
     }
 }
