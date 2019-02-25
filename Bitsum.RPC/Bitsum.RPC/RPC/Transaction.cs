@@ -24,6 +24,9 @@ namespace Bitsum.RPC
         [JsonProperty("transfers")]
         public List<Transfer> Transfers { get; set; }
 
+        [JsonProperty("unlock_time")]
+        public uint UnlockTime { get; set; }
+
         [JsonIgnore]
         public string TransactionHex { get; set; }
 
